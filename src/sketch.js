@@ -23,12 +23,12 @@ function draw(){
 
 //animation for sun to spin
 if (pigX <= -200) {
-  rotateP = rotateP - 1
-  backGround(color(168, 255, 250));
+    rotateP = rotateP - 1
+    backGround(color(168, 255, 250));
 }
 
   drawGrass(0, 300, 400, 100);
-  drawPig(400+pigX,380,0.9)
+  drawPig(400 + pigX,380,0.9)
   drawFlower(300,70,90+rotateP)
   drawFlower(300,70,135+rotateP)
   drawFlower(300,70,180+rotateP)
@@ -77,7 +77,7 @@ function drawSun(){      // the sun
     //---------- Pig----------------------------
 function drawPig(x,y,s){  
     push();
-      translate(200, 400);
+      translate(x, y);
     // the legs of the pig --> i put it before the body because i want the body to be infront of the legs
         fill ('#fccfe4')
         quad(20, -100, -30, -110, -10, -45, 20, -45)
