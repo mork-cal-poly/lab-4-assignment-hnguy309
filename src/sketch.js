@@ -5,11 +5,19 @@ function setup() {
   // so that we can manipulate its style
   // easier
   let myCanvas = createCanvas(400, 400);
+  background(255)
   myCanvas.parent("canvas-parent");
 }
 
+function backGround(c){
+  fill(c)
+  rect(0,0,400,400)
+}
+
 function draw() {
-  background('#3a4494' )
+
+
+}
 
     //---------- Background -------------------------
     push();
@@ -23,7 +31,8 @@ function draw() {
     //putting the background first to advoid it covering the animal
     
     pop();
-  
+
+function drawPig(x,y,s){  
     //---------- Pig----------------------------
     push();
       translate(200, 400);
