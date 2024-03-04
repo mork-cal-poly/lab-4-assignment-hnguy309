@@ -15,6 +15,10 @@ function setup() {
 
 function draw(){
   backGround(color(58,68,148))
+ //animation for pig  
+ if(clicked){ 
+  pigX = pigX - 1; 
+}
 
   drawGrass(0, 300, 400, 100);
   drawPig(400,380,0.9)
