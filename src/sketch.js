@@ -28,7 +28,7 @@ if (pigX <= -200) {
 }
 
   drawGrass(0, 300, 400, 100);
-  drawPig(400,380,0.9)
+  drawPig(400+pigX,380,0.9)
   drawFlower(300,70,90)
   drawFlower(300,70,135)
   drawFlower(300,70,180)
