@@ -9,17 +9,16 @@ function setup() {
   myCanvas.parent("canvas-parent");
 }
 
+function draw(){
+  backGround(color(58,68,148))
+}
+
+ //---------- Background -------------------------
 function backGround(c){
   fill(c)
   rect(0,0,400,400)
 }
 
-function draw() {
-
-
-}
-
-    //---------- Background -------------------------
 function drawGrass(x,y,w,h){
     push();
       translate(x,y)  //this code is for the grass
@@ -28,7 +27,7 @@ function drawGrass(x,y,w,h){
       rect(0, 0, w, h);
     pop()
   }  
-
+//------Sun Flower------------------
 function drawFlower(x,y,rotateP){ //this for the flower around the sun
     push()
       translate(x,y)
@@ -48,13 +47,11 @@ function drawSun(){      // the sun
       fill('#faee02')
       noStroke()
       ellipse(300, 70, 40, 40);
-    //putting the background first to advoid it covering the animal
     pop();
-}    
+}   
 
-
-function drawPig(x,y,s){  
     //---------- Pig----------------------------
+function drawPig(x,y,s){  
     push();
       translate(200, 400);
     // the legs of the pig --> i put it before the body because i want the body to be infront of the legs
