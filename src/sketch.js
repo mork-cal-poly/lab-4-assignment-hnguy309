@@ -1,5 +1,5 @@
 let pigX = 0
-
+let rotateP = 0
 
 let clicked = false;
 
@@ -18,6 +18,12 @@ function draw(){
  //animation for pig  
  if(clicked){ 
   pigX = pigX - 1; 
+}
+
+//animation for sun to spin
+if (pigX <= -200) {
+  rotateP = rotateP - 1
+  backGround(color(168, 255, 250));
 }
 
   drawGrass(0, 300, 400, 100);
