@@ -29,6 +29,20 @@ function drawGrass(x,y,w,h){
     pop()
   }  
 
+function drawFlower(x,y,rotateP){ //this for the flower around the sun
+    push()
+      translate(x,y)
+      rotate(rotateP)
+      scale(0.5)
+      fill('#FF774C')
+      noStroke()
+      ellipse(0, 0, 50,200)
+      fill(255)
+      noStroke()
+      ellipse(0,0, 50,150)
+    pop()
+  }
+
 function drawSun(){      // the sun
     push();
       fill('#faee02')
