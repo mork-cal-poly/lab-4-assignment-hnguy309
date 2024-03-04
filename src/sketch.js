@@ -1,4 +1,8 @@
+let pigX = 0
+
+
 let clicked = false;
+
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
@@ -102,4 +106,8 @@ function drawPig(x,y,s){
         arc(125, -195, 40, 40, PI + QUARTER_PI, QUARTER_PI );  
   
     pop();
+}
+
+function mouseClicked() {
+  clicked = !clicked;     
 }
