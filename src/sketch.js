@@ -20,14 +20,14 @@ function draw() {
 }
 
     //---------- Background -------------------------
+function drawGrass(x,y,w,h){
     push();
-      //this code is for the grass
-      fill('#2d8a51')
+      translate(x,y)  //this code is for the grass
+      fill('#2d8a51');
       noStroke();
-      rect(0, 330, 400) 
-      // the moon
-      fill('#faee02')
-      arc(300, 50, 60, 60, 0, PI + QUARTER_PI, PIE);
+      rect(0, 0, w, h);
+    pop()
+  }    
     //putting the background first to advoid it covering the animal
     
     pop();
