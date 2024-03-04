@@ -27,10 +27,17 @@ function drawGrass(x,y,w,h){
       noStroke();
       rect(0, 0, w, h);
     pop()
-  }    
+  }  
+
+function drawSun(){      // the sun
+    push();
+      fill('#faee02')
+      noStroke()
+      ellipse(300, 70, 40, 40);
     //putting the background first to advoid it covering the animal
-    
     pop();
+}    
+
 
 function drawPig(x,y,s){  
     //---------- Pig----------------------------
