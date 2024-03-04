@@ -18,6 +18,8 @@ function draw(){
   drawFlower(300,70,135)
   drawFlower(300,70,180)
 
+  drawSun(300,70)
+
 }
 
  //---------- Background -------------------------
