@@ -11,6 +11,13 @@ function setup() {
 
 function draw(){
   backGround(color(58,68,148))
+
+  drawGrass(0, 300, 400, 100);
+  drawPig(400,380,0.9)
+  drawFlower(300,70,90)
+  drawFlower(300,70,135)
+  drawFlower(300,70,180)
+
 }
 
  //---------- Background -------------------------
