@@ -10,6 +10,7 @@ function setup() {
   // easier
   let myCanvas = createCanvas(400, 400);
   background(255)
+  ellipseMode(CENTER)
   myCanvas.parent("canvas-parent");
 }
 
