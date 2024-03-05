@@ -1,5 +1,4 @@
 
-//Angelas Commit Testing 
 let pigX = 0
 let rotateP = 0
 
@@ -36,6 +35,11 @@ if (pigX <= -200) {
   drawFlower(300,70,180+rotateP)
 
   drawSun(300,70)
+  
+  //_______________Penguin________________
+    //x,y,colorDark,colorLight,colorEye,colorBeak
+    drawPenguin(200,400,color(29,53,87),color(241,233,218),color(0),color(241,136,5))
+  
 
 }
 
@@ -67,6 +71,67 @@ function drawFlower(x,y,rotateP){ //this for the flower around the sun
       ellipse(0,0, 50,150)
     pop()
   }
+
+
+//_________________Function for Penguin (Angela's hidden)___________________
+function drawPenguin(x,y,colorDark,colorLight,colorEye,colorBeak){
+
+  push();
+    translate(x, y);
+    noStroke();
+  
+  //---Body----
+    fill(colorDark);
+    quad(-75,-225,75,-225,100,-50,-100,-50);
+  
+  //----wings----
+  //left
+  push();
+    translate(-100,-175);
+    fill(colorDark);
+    rotate(PI/4);
+    ellipse(0,0,50,150);
+  pop();
+  //right
+  push();
+    translate(100,-175);
+    fill(colorDark);
+    rotate(3*PI/4);
+    ellipse(0,0,50,150);
+  pop();
+ 
+  //---Head----
+  fill(colorDark);
+  ellipse(0,-275,150);
+  
+  //---Regular Face----
+  fill(colorLight);
+  arc(0,-262.5,117,120,7*PI/4,5*PI/4);
+  ellipse(-30,-262.5,60,90)
+  ellipse(30,-262.5,60,90)
+  //beak
+  fill(colorBeak)
+  quad(-20,-275,0,-280,20,-275,0,-260);
+  //eye
+  fill(colorEye);
+  ellipse(-30,-287.5,10,10)
+  ellipse(30,-287.5,10,10)
+
+  //----Body Circle
+  fill(colorLight);
+  ellipse(0,-150,137.5,210);
+  
+  //----feet----
+  fill(colorBeak);
+  triangle(-50,-100,-25,-50,-75,-50);
+  triangle(50,-100,75,-50,25,-50)
+  arc(-50,-62.5,75,75,7*PI/4,5*PI/4);
+  arc(50,-62.5,75,75,7*PI/4,5*PI/4); 
+  
+  
+  pop();
+
+}
 
 function drawSun(){      // the sun
     push();
