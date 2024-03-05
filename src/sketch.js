@@ -79,6 +79,7 @@ function drawPenguin(x,y,colorDark,colorLight,colorEye,colorBeak){
   push();
     translate(x, y);
     noStroke();
+    scale(.1)
   
   //---Body----
     fill(colorDark);
