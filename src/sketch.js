@@ -33,7 +33,7 @@ if (pigX <= -200) {
 
 //_______________Penguin________________
     //x,y,colorDark,colorLight,colorEye,colorBeak
-    drawPenguin(300,90,color(29,53,87),color(241,233,218),color(0),color(241,136,5))
+    drawPenguin(310,60,color(29,53,87),color(241,233,218),color(0),color(241,136,5))
 
  drawFlower(300,70,90+rotateP)
  drawFlower(300,70,135+rotateP)
